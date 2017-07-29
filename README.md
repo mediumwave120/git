@@ -9,10 +9,8 @@ git常见错误
         提示出错信息：fatal: remote origin already exists.
         解决办法如下：
              1、先输入$ git remote rm origin
-
              2、再输入$ git remote add origin git@github.com:djqiang/gitdemo.git
-
-            3、如果输入$ git remote rm origin 还是报错error: Could not remove config section 'remote.origin'. 我们需要修改gitconfig文件的内容：找到github的安装路径，找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
+             3、如果输入$ git remote rm origin 还是报错error: Could not remove config section 'remote.origin'. 我们需要修改gitconfig文件的内容：找到github的安装路径，找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
 
 二、如果输入:$ ssh -T git@github.com
         出现错误提示：Permission denied (publickey).因为新生成的key不能加入ssh就会导致连接不上github。
