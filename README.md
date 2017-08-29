@@ -2,13 +2,17 @@
 <a href='http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758392816224cafd33c44b4451887cc941e6716805c000'>git操作</a>
 
 <h3>git常见错误</h3>
-一、如果输: $ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git
-    提示出错信息：fatal: remote origin already exists.
-    解决办法如下：
-      1、先输入$ git remote rm origin
-      2、再输入$ git remote add origin git@github.com:djqiang/gitdemo.git
-      3、如果输入$ git remote rm origin 还是报错error: Could not remove config section 'remote.origin'.
+<h4>一、$ git remote add origin git@github.com:xxx(帐号)/gitdemo(项目名).git,提示出错信息：fatal: remote origin already exists.</h4>
+<p>
+  解决办法如下：
+   1、先输入$ git remote rm origin
+   2、再输入$ git remote add origin git@github.com:djqiang/gitdemo.git
+   3、如果输入$ git remote rm origin 还是报错error: Could not remove config section 'remote.origin'.
          我们需要修改gitconfig文件的内容：找到github的安装路径，找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
+</p>
+
+    
+    
 
 二、如果输入:$ ssh -T git@github.com
     出现错误提示：Permission denied (publickey).因为新生成的key不能加入ssh就会导致连接不上github。
