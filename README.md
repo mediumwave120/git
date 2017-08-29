@@ -1,8 +1,6 @@
 # git
-git操作
+<h3>git操作</h3>
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758392816224cafd33c44b4451887cc941e6716805c000
-
-
 
 git常见错误
 一、如果输: $ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git
