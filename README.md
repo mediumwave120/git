@@ -55,15 +55,15 @@
      <p>$ git init             //初始化</p>
      <p>$ touch README</p>
      <p>$ git add README        //更新README文件</p>
-     <p>$ git commit -m 'first commit'     //提交更新，并注释信息“first commit”</p>
+     <p>$ git commit -m 'first commit'   //提交更新，并注释信息“first commit”</p>
      <p>$ git remote add origin git@github.com:defnngj/hello-world.git //连接远程github项目 </p> 
-     <p>$ git push -u origin master     //将本地项目更新到github项目上去</p>
+     <p>$ git push -u origin master   //将本地项目更新到github项目上去</p>
 
-  	 <p>配置相关信息：</p>
+  	 <p>配置相关信息:</p>
             <p>4.1　当你安装Git后首先要做的事情是设置你的用户名称和e-mail地址。这是非常重要的，因为每次Git提交都会使用该信息。它被永远的嵌入到了你的提交中：</p>
 			<p>$ git config --global user.name "John Doe"</p>
 			<p>$ git config --global user.email johndoe@example.com</p>
-           <p>4.2  你的编辑器(Your Editor)<p>
+           <p>4.2  你的编辑器(Your Editor)</p>
 			现在，你的标识已经设置，你可以配置你的缺省文本编辑器，Git在需要你输入一些消息时会使用该文本编辑器。缺省情况下，Git使用你的系统的缺省编辑器，这通常可能是vi 或者 vim。如果你想使用一个不同的文本编辑器，例如Emacs，你可以做如下操作：</p>
 			<p>$ git config --global core.editor emacs</p>
  
