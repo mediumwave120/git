@@ -79,9 +79,10 @@
 <h4>五、gitconfig配置文件:Git有一个工具被称为git config，它允许你获得和设置配置变量；这些变量可以控制Git的外观和操作的各个方面。这些变量可以被存储在三个不同的位置：</h4>
     <p> 1./etc/gitconfig 文件：包含了适用于系统所有用户和所有库的值。如果你传递参数选项’--system’ 给 git config，它将明确的读和写这个文件。</p>
     <p>  2.~/.gitconfig 文件 ：具体到你的用户。你可以通过传递--global 选项使Git 读或写这个特定的文件。</p>
-    <p> 3.位于git目录的config文件 (也就是 .git/config) ：无论你当前在用的库是什么，特定指向该单一的库。每个级别重写前一个级别的值。因此，在.git/config中的值覆盖了在/etc/gitconfig中的同一个值。</p>
-
-    <p>  在Windows系统中，Git在$HOME目录中查找.gitconfig文件（对大多数人来说，位于C:\Documents and Settings\$USER下）。它也会查找/etc/gitconfig，尽管它是相对于Msys 根目录的。这可能是你在Windows中运行安装程序时决定安装Git的任何地方。</p> 
+    <p> 3.位于git目录的config文件 (也就是 .git/config)</p>
+    <p>无论你当前在用的库是什么，特定指向该单一的库。每个级别重写前一个级别的值。</p>
+    <p>因此，在.git/config中的值覆盖了在/etc/gitconfig中的同一个值。</p>
+    <p> 在Windows系统中，Git在$HOME目录中查找.gitconfig文件（对大多数人来说，位于C:\Documents and Settings\$USER下）。它也会查找/etc/gitconfig，尽管它是相对于Msys 根目录的。这可能是你在Windows中运行安装程序时决定安装Git的任何地方。</p> 
 
   	<h4>六、push到github时，每次都要输入用户名和密码的问题"</h4>
   	<p>在github.com上 建立了一个小项目，可是在每次push的时候，都要输入用户名和密码，很是麻烦</p>
