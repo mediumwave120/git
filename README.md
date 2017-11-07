@@ -2,13 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>git操作</title>
-	<style type="text/css">
-		div>h1{text-align: center;}
-		div>h1>a{text-decoration: none;}
-		h4{color:red;}
-		div.all>p{margin-left: 30px;}
-	</style>
+	
 </head>
 <body>
 <div>
