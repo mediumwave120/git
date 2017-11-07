@@ -82,9 +82,9 @@
     <p> 3.位于git目录的config文件 (也就是 .git/config)</p>
     <p>无论你当前在用的库是什么，特定指向该单一的库。每个级别重写前一个级别的值。</p>
     <p>因此，在.git/config中的值覆盖了在/etc/gitconfig中的同一个值。</p>
-    <p> 在Windows系统中，Git在$HOME目录中查找.gitconfig文件（对大多数人来说，位于C:\Documents and Settings\$USER下）。它也会查找/etc/gitconfig，尽管它是相对于Msys 根目录的。这可能是你在Windows中运行安装程序时决定安装Git的任何地方。</p> 
-
-  	<h4>六、push到github时，每次都要输入用户名和密码的问题"</h4>
+    <p> 在Windows系统中,Git在$HOME目录中查找.gitconfig文件（对大多数人来说,位于C:\Documents and Settings\$USER下）。
+    它也会查找/etc/gitconfig,尽管它是相对于Msys 根目录的。这可能是你在Windows中运行安装程序时决定安装Git的任何地方。</p>
+  	<h4>六、push到github时，每次都要输入用户名和密码的问题</h4>
   	<p>在github.com上 建立了一个小项目，可是在每次push的时候，都要输入用户名和密码，很是麻烦</p>
    	<p>原因是使用了https方式 push</p>
     <p>在termail里边 输入  git remote -v</p>
@@ -95,7 +95,6 @@
     <p>1. git remote rm origin</p>
     <p>2. git remote add origin git@github.com/dengVictor/learngit.git</p>
     <p>3. git push origin</p>
-
     <h4>七、常用命令:</h4>
     <p>假如你现在新创建了一个项目，想把它提交到github上面？</p>
     <p>假设你创建好了一个项目，并切换到项目的根目录下面：</p>
@@ -116,7 +115,6 @@
     <p>假如本地已经存在了这个项目，而仓库中又有一新的更新，如何把更的合并到本地的项目中？</p>
     <p>$ git fetch origin    //取得远程更新，这里可以看做是准备要取了</p>
     <p> $ git merge origin/master  //把更新的内容合并到本地分支/master</p>
-
    <hr>
    <p>项目中删除了一些文件，如何提交？</p>
    <p>假如远程仓库中已经存了aaa这个文件，我fetch了下来，并删除了aaa这个文件，想再push上到远程仓库中，并使远程仓库中的项目被新的修改覆盖（也就是远程仓库中的aaa也被删除）</p>
