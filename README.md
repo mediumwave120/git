@@ -11,6 +11,32 @@
 	</h1>
 </div>
 <h3>git常见错误</h3>
+	## github 使用
+### 创建
+### 1、创建SSH Key。把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可
+```
+$ ssh-keygen -t rsa -C "youremail@xxx.com"
+```
+### 2.这个文件在当前系统用户下面
+### 3.直接赋值粘贴 .ssh的文件会破坏格式 输入命令
+```
+clip < ~/.ssh/id_rsa.pub
+```
+### 4.配置用户和邮箱
+```
+$ git config --global user.name "your name"
+$ git config --global user.email "your_email@youremail.com"
+```
+
+### 使用
+```
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mediumwave120/2020.git
+git push -u origin main
+```
 <div class="all">
 	<h4>一、$ git remote add origin git@github.com:xxx(帐号)/gitdemo(项目名).git,提示出错信息：fatal: remote origin already exists.</h4>
 <p>
